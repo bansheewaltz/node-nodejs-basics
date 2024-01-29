@@ -1,6 +1,6 @@
 import { rename as fsrename } from "node:fs/promises";
 import { join } from "node:path";
-import * as utils from "./utils.js";
+import * as utils from "../utils/utils.js";
 
 const __dirname = utils.fileURLToDirname(import.meta.url);
 const srcFilepath = join(__dirname, "files", "wrongFilename.txt");
